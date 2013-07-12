@@ -6,5 +6,19 @@
 </head>
 <body>
 	<h1>{{ title }}</h1>
+	
+	{% if app_version %}
+	<p>Version {{ app_version }}</p>
+	{% endif %}
+
+	{% if flask_debug %}
+	<p class="warning">Flask is in debug mode. This is not safe for production.</p>
+	{% endif %}
+
+	{% if enable_cool_new_feature %}
+	<div id="box">
+		Our cool new feature, controlled by the <pre>ENABLE_COOL_NEW_FEATURE</pre> flag in the environment.
+	</div>
+	{% endif %}
 </body>
 </html>
