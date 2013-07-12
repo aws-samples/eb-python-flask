@@ -8,7 +8,8 @@ application.debug=True
  
 @application.route('/')
 def hello_world():
-    return "Hello world!"
+    message = "Hello, world!"
+    return flask.render_template('index.html', title=message)
  
 if __name__ == '__main__':
     application.run(host='0.0.0.0', debug=True)
