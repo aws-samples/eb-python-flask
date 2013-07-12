@@ -1,8 +1,27 @@
-h1 { 
-	font-family:arial, helvetica;
-}
+h1 { font-family:arial, helvetica; }
 
 body {
 	margin:50px 0px; padding:0px;
 	text-align:center;
+	}
+	
+.warning {
+	color: red;
+	font-weight: bold;
+}
+	
+#box {
+	width:650px;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	background-color:#eee;
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+	}
+	
+pre {
+	display: inline;
+	font-weight: bold;;
 }
