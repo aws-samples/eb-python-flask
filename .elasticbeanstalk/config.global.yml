@@ -1,0 +1,3 @@
+global:
+  application_name: eb-python-flask
+  default_platform: Python 3.4
